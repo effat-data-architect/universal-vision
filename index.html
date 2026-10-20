@@ -1,215 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Universal Vision Consulting - Architecture and IT Solutions</title>
+		<title>Universal Vision Consulting | Data Architecture & IT Consultancy</title>
 		<meta charset="utf-8" />
-		<meta name="color-scheme" content="light">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=2.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			#header h1#logo {
-				display: flex !important;
-				visibility: visible !important;
-				position: absolute !important;
-				left: 4.5em !important;
-				top: 0 !important;
-				z-index: 10001 !important;
-				height: 44px !important;
-				line-height: 44px !important;
-			}
-			
-			#header h1#logo a {
-				white-space: nowrap;
-				max-width: 100%;
-				align-items: center;
-			}
-			
-			.titleBar, #titleBar {
-				background: rgba(255, 255, 255, 0.95) !important;
-				box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
-				height: 44px !important;
-			}
-			
-			#titleBar .title {
-				color: #111111 !important;
-				font-weight: 700 !important;
-			}
-			
-			#navPanel {
-				background: rgba(255, 255, 255, 0.98) !important;
-				box-shadow: 0 0 30px rgba(0, 0, 0, 0.08) !important;
-			}
-			
-			#navPanel nav ul li {
-				border-top: 1px solid rgba(15, 23, 42, 0.08) !important;
-			}
-			
-			#navPanel nav ul li:first-child {
-				border-top: 0 !important;
-			}
-			
-			#navPanel nav li a {
-				color: #111111 !important;
-				font-weight: 600 !important;
-				padding: 0.9em 1em !important;
-			}
-			
-			#navPanel nav li a:hover {
-				background: rgba(30, 64, 175, 0.04) !important;
-			}
-			
-			@media screen and (max-width: 980px) {
-				#header {
-					display: block !important;
-					position: fixed !important;
-					height: 44px !important;
-					line-height: 44px !important;
-				}
-				#header h1#logo {
-					left: 3.5em !important;
-					right: 0.75em !important;
-					width: auto !important;
-					max-width: calc(100% - 5.5em) !important;
-					overflow: hidden !important;
-				}
-				#header h1#logo a {
-					font-size: 0.74em !important;
-					gap: 6px;
-				}
-				#header h1#logo svg {
-					width: 18px !important;
-					height: 18px !important;
-					min-width: 18px !important;
-				}
-				#header h1#logo span {
-					font-size: 0.8em !important;
-					white-space: nowrap;
-				}
-				#header nav {
-					display: none !important;
-				}
-				#titleBar {
-					display: block !important;
-				}
-				#titleBar .title {
-					left: 3.5em !important;
-					right: 0.75em !important;
-					max-width: calc(100% - 4.5em) !important;
-					overflow: hidden !important;
-					white-space: nowrap !important;
-					font-size: 0.8em !important;
-				}
-				#page-wrapper {
-					overflow-x: hidden;
-				}
-				body {
-					overflow-x: hidden;
-				}
-				section {
-					padding-left: 1.25em !important;
-					padding-right: 1.25em !important;
-				}
-				section[style*="padding: 140px 20px 60px 20px"] {
-					padding-top: 100px !important;
-					padding-bottom: 3em !important;
-				}
-				#four {
-					padding-top: 4em !important;
-				}
-				#five {
-					padding-top: 4em !important;
-					padding-bottom: 4em !important;
-				}
-				#four .row > section,
-				#four .row > .col-4 {
-					width: 100% !important;
-					max-width: 100% !important;
-					flex: 0 0 100% !important;
-				}
-				.cta .row {
-					display: block !important;
-				}
-				.cta .row > div {
-					width: 100% !important;
-					margin: 0 0 1em 0 !important;
-				}
-				.cta input[type="submit"] {
-					width: 100% !important;
-				}
-				#footer {
-					padding: 2em 0 1.5em !important;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#header {
-					height: 52px !important;
-				}
-				#titleBar {
-					height: 52px !important;
-				}
-				#titleBar .toggle {
-					width: 30px !important;
-					height: 30px !important;
-					top: 11px !important;
-					left: 0.8em !important;
-				}
-				#titleBar .title {
-					font-size: 0.7em !important;
-					left: 3em !important;
-					right: 0.5em !important;
-				}
-				#header h1#logo {
-					left: 3em !important;
-					right: 0.5em !important;
-				}
-				#header h1#logo a {
-					font-size: 0.68em !important;
-					gap: 4px;
-				}
-				#header h1#logo svg {
-					width: 16px !important;
-					height: 16px !important;
-				}
-				#four .row {
-					margin-left: 0 !important;
-				}
-				#four .row > section {
-					padding-left: 0 !important;
-					padding-right: 0 !important;
-				}
-				#five h2,
-				#four h2 {
-					font-size: 1.7em !important;
-					line-height: 1.25 !important;
-				}
-				section[style*="padding: 140px 20px 60px 20px"] {
-					padding-top: 88px !important;
-				}
-				#navPanel nav ul li a {
-					font-size: 1.05em !important;
-					padding: 0.9em 1em !important;
-				}
-			}
-		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 
-								<!-- Header -->
-				<header id="header" style="background: rgba(255, 255, 255, 0.95) !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 0 1em !important;">
-					<h1 id="logo">
+			<!-- Header -->
+				<header id="header" style="background: rgba(255, 255, 255, 0.95) !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 0 2em !important;">
+					<h1 id="logo" style="left: 2em !important;">
 						<a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: #111111 !important;">
 							<!-- Embedded Tech Symbol -->
-							<svg xmlns="http://w3.org" viewBox="0 0 100 100" style="height: 20px; width: 20px; margin-right: 8px; fill: none; vertical-align: middle;">
-								<polygon points="50,15 85,75 15,75" stroke="#1e40af" stroke-width="10" stroke-linejoin="round" />
-								<polygon points="50,40 70,75 30,75" stroke="#64748b" stroke-width="8" stroke-linejoin="round" />
-								<circle cx="50" cy="58" r="8" fill="#b91c1c" />
+							<svg xmlns="http://w3.org" viewBox="0 0 100 100" style="height: 24px; width: 24px; margin-right: 10px; fill: none; vertical-align: middle;">
+								<polygon points="50,15 85,75 15,75" stroke="#1e40af" stroke-width="8" stroke-linejoin="round" />
+								<polygon points="50,40 70,75 30,75" stroke="#64748b" stroke-width="6" stroke-linejoin="round" />
+								<circle cx="50" cy="58" r="7" fill="#b91c1c" />
 							</svg>
-							<!-- Crisp High-Contrast Corporate Font for Mobile Viewports -->
-							<span style="font-weight: 800; letter-spacing: 0.5px; color: #111111 !important;">
-								UNIVERSAL <span style="font-weight: 400; color: #475569 !important;">VISION</span>
+							<!-- Crisp Corporate Font -->
+							<span style="font-weight: 800; letter-spacing: 0.5px; font-size: 0.95em;">
+								UNIVERSAL <span style="font-weight: 300; color: #666666;">VISION</span>
 							</span>
 						</a>
 					</h1>
@@ -243,44 +56,44 @@
 					</div>
 				</section>
 
-						<!-- Core Services Features Grid -->
-				<section id="four" style="background: #ffffff !important; color: #222222 !important; padding: 6em 0 4em 0 !important; display: block !important;">
+			<!-- Core Services Features Grid -->
+				<section id="four" style="background: #ffffff !important; color: #222222 !important; padding: 6em 0 4em 0 !important;">
 					<div class="container">
 						<header class="major" style="text-align: center; margin-bottom: 4em;">
 							<h2 style="color: #111111 !important; font-size: 2.2em; font-weight: 800; text-transform: none !important; letter-spacing: 0px !important;">Our Core Expertise</h2>
-							<p style="color: #555555 !important; opacity: 1 !important; filter: none !important;">Tailored enterprise solutions engineered to modernize your data lifecycle and digital ecosystems.</p>
+							<p style="color: #555555 !important;">Tailored enterprise solutions engineered to modernize your data lifecycle and digital ecosystems.</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-chart-area"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Data Architecture</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Enterprise-scale data models, integration strategies, and resilient platform foundations.</p>
+									<p style="color: #555555 !important;">Designing modern enterprise data schemas, structured logical models, and resilient data blueprints.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-database"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Data Engineering</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Modern ETL, pipeline orchestration, data quality checks, and automation for measurable impact.</p>
+									<p style="color: #555555 !important;">Building automated ETL/ELT data pipelines, high-velocity streaming paths, and centralized warehouses.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-cloud"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Cloud Strategy</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Scalable cloud adoption roadmaps that balance performance, governance, and cost efficiency.</p>
+									<p style="color: #555555 !important;">Accelerating cloud migrations and deploying secure, optimized multi-cloud or hybrid infrastructure.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-project-diagram"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">IT Consultancy</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Business-aligned technology guidance to improve operations, systems, and strategic execution.</p>
+									<p style="color: #555555 !important;">Aligning strategic technical engineering targets with practical agile execution and product governance.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-shield-alt"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Data Governance</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Policies, controls, and stewardship practices that improve trust, compliance, and accountability.</p>
+									<p style="color: #555555 !important;">Enforcing rigorous access controls, continuous structural audits, quality assurance, and compliance schemas.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-lightbulb"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Business Intelligence</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Actionable dashboards and analytical frameworks that turn operational data into decisions.</p>
+									<p style="color: #555555 !important;">Converting raw corporate metadata into interactive semantic layers and executive dashboards.</p>
 								</section>
 							</div>
 						</div>
@@ -297,7 +110,7 @@
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50" style="justify-content: center;">
 								<div class="col-8 col-12-xsmall">
-									<input type="email" name="email" id="email" placeholder="Your Corporate Email Address" required style="background: #ffffff !important; color: #222222 !important; border: 1px solid #cbd5e1 !important; border-radius: 8px !important; padding: 0.9em 1em !important;" />
+									<input type="email" name="email" id="email" placeholder="Your Corporate Email Address" required style="background: #ffffff !important; color: #222222 !important; border: 1px solid #cbd5e1 !important;" />
 								</div>
 								<div class="col-4 col-12-xsmall">
 									<input type="submit" value="Connect With Us" class="fit primary" />
