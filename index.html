@@ -7,51 +7,119 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css?v=2.0" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header h1#logo {
+				display: flex !important;
+				visibility: visible !important;
+				position: absolute !important;
+				left: 4.5em !important;
+				top: 0 !important;
+				z-index: 10001 !important;
+				height: 44px !important;
+				line-height: 44px !important;
+			}
+			
+			#header h1#logo a {
+				white-space: nowrap;
+				max-width: 100%;
+				align-items: center;
+			}
+			
+			.titleBar, #titleBar {
+				background: rgba(255, 255, 255, 0.95) !important;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+				height: 44px !important;
+			}
+			
+			@media screen and (max-width: 980px) {
+				#header {
+					display: block !important;
+					position: fixed !important;
+					height: 44px !important;
+					line-height: 44px !important;
+				}
+				#header h1#logo {
+					left: 3.5em !important;
+					right: 0.75em !important;
+					width: auto !important;
+					max-width: calc(100% - 5.5em) !important;
+					overflow: hidden !important;
+				}
+				#header h1#logo a {
+					font-size: 0.74em !important;
+					gap: 6px;
+				}
+				#header h1#logo svg {
+					width: 18px !important;
+					height: 18px !important;
+					min-width: 18px !important;
+				}
+				#header h1#logo span {
+					font-size: 0.8em !important;
+					white-space: nowrap;
+				}
+				#header nav {
+					display: none !important;
+				}
+				#titleBar {
+					display: block !important;
+				}
+				#titleBar .title {
+					left: 3.5em !important;
+					right: 0.75em !important;
+					max-width: calc(100% - 4.5em) !important;
+					overflow: hidden !important;
+					white-space: nowrap !important;
+					font-size: 0.8em !important;
+				}
+				#page-wrapper {
+					overflow-x: hidden;
+				}
+				body {
+					overflow-x: hidden;
+				}
+				section {
+					padding-left: 1.25em !important;
+					padding-right: 1.25em !important;
+				}
+				section[style*="padding: 140px 20px 60px 20px"] {
+					padding-top: 100px !important;
+					padding-bottom: 3em !important;
+				}
+				#four {
+					padding-top: 4em !important;
+				}
+				#five {
+					padding-top: 4em !important;
+					padding-bottom: 4em !important;
+				}
+				#four .row > section,
+				#four .row > .col-4 {
+					width: 100% !important;
+					max-width: 100% !important;
+					flex: 0 0 100% !important;
+				}
+				.cta .row {
+					display: block !important;
+				}
+				.cta .row > div {
+					width: 100% !important;
+					margin: 0 0 1em 0 !important;
+				}
+				.cta input[type="submit"] {
+					width: 100% !important;
+				}
+				#footer {
+					padding: 2em 0 1.5em !important;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 
 								<!-- Header -->
 				<header id="header" style="background: rgba(255, 255, 255, 0.95) !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 0 1em !important;">
-					
-					<!-- Advanced Mobile Position Correction Styles -->
-					<style>
-						#header h1#logo {
-							display: flex !important;
-							visibility: visible !important;
-							position: absolute !important;
-							left: 4.5em !important; /* Pushes text away from the red mobile menu button */
-							top: 0 !important;
-							z-index: 10001 !important;
-							height: 44px !important;
-							line-height: 44px !important;
-						}
-						
-						/* Prevents the default template bar from breaking your typography layout */
-						.titleBar, #titleBar {
-							background: rgba(255, 255, 255, 0.95) !important;
-							box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
-							height: 44px !important;
-						}
-
-						@media screen and (max-width: 980px) {
-							#header {
-								display: block !important;
-								position: fixed !important;
-								height: 44px !important;
-								line-height: 44px !important;
-							}
-							/* Slightly scales down the font size on mobile screens to fit perfectly */
-							#header h1#logo span {
-								font-size: 0.8em !important;
-							}
-							/* Completely hides the duplicate breaking button on small mobile screens */
-							#header nav {
-								display: none !important;
-							}
-						}
-					</style>
-
 					<h1 id="logo">
 						<a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: #111111 !important;">
 							<!-- Embedded Tech Symbol -->
@@ -108,32 +176,32 @@
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-chart-area"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Data Architecture</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Designing modern enterprise data schemas, structured logical models, and resilient data blueprints.</p>
+									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Enterprise-scale data models, integration strategies, and resilient platform foundations.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-database"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Data Engineering</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Building automated ETL/ELT data pipelines, high-velocity streaming paths, and centralized warehouses.</p>
+									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Modern ETL, pipeline orchestration, data quality checks, and automation for measurable impact.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-cloud"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Cloud Strategy</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Accelerating cloud migrations and deploying secure, optimized multi-cloud or hybrid infrastructure.</p>
+									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Scalable cloud adoption roadmaps that balance performance, governance, and cost efficiency.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-project-diagram"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">IT Consultancy</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Aligning strategic technical engineering targets with practical agile execution and product governance.</p>
+									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Business-aligned technology guidance to improve operations, systems, and strategic execution.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-shield-alt"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Data Governance</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Enforcing rigorous access controls, continuous structural audits, quality assurance, and compliance schemas.</p>
+									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Policies, controls, and stewardship practices that improve trust, compliance, and accountability.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall" style="text-align: center; margin-bottom: 2em;">
 									<span class="icon solid alt major fa-lightbulb"></span>
 									<h3 style="color: #111111 !important; font-weight: 700; margin-top: 1em; text-transform: none !important; letter-spacing: 0px !important;">Business Intelligence</h3>
-									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Converting raw corporate metadata into interactive semantic layers and executive dashboards.</p>
+									<p style="color: #222222 !important; font-weight: 400 !important; opacity: 1 !important; filter: none !important; -webkit-opacity: 1 !important; font-size: 0.95em !important; line-height: 1.6 !important;">Actionable dashboards and analytical frameworks that turn operational data into decisions.</p>
 								</section>
 							</div>
 						</div>
@@ -150,7 +218,7 @@
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50" style="justify-content: center;">
 								<div class="col-8 col-12-xsmall">
-									<input type="email" name="email" id="email" placeholder="Your Corporate Email Address" required style="background: #ffffff !important; color: #222222 !important; border: 1px solid #cbd5e1 !important;" />
+									<input type="email" name="email" id="email" placeholder="Your Corporate Email Address" required style="background: #ffffff !important; color: #222222 !important; border: 1px solid #cbd5e1 !important; border-radius: 8px !important; padding: 0.9em 1em !important;" />
 								</div>
 								<div class="col-4 col-12-xsmall">
 									<input type="submit" value="Connect With Us" class="fit primary" />
