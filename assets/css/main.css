@@ -4157,3 +4157,14 @@ input, select, textarea {
     background-color: #e04a5f !important;
     color: #ffffff !important;
 }
+/* Force absolute text opacity for descriptions in Section Four */
+#four p {
+    color: #444444 !important;
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+#four h3 {
+    color: #111111 !important;
+    opacity: 1 !important;
+}
