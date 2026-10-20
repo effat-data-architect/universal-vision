@@ -13,6 +13,25 @@
 
 			<!-- Header -->
 				<header id="header" style="background: rgba(255, 255, 255, 0.95) !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 0 2em !important;">
+					
+					<!-- Added Style Element to explicitly prevent template from hiding logo on mobile -->
+					<style>
+						@media screen and (max-width: 980px) {
+							#header h1#logo {
+								display: flex !important;
+								visibility: visible !important;
+								position: absolute !important;
+								left: 1.5em !important;
+								top: 0 !important;
+								height: 44px !important;
+								line-height: 44px !important;
+							}
+							#header h1#logo a {
+								color: #111111 !important;
+							}
+						}
+					</style>
+
 					<h1 id="logo" style="left: 2em !important;">
 						<a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: #111111 !important;">
 							<!-- Embedded Tech Symbol -->
