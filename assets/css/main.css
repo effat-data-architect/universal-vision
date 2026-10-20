@@ -3450,16 +3450,9 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
-		position: relative;
-		text-align: center;
-		z-index: 21;
+		background-color: #ffffff !important;
+    background-image: none !important;
+    color: #222222 !important;
 	}
 
 		#banner:before {
@@ -3469,7 +3462,9 @@ input, select, textarea {
 			vertical-align: middle;
 			width: 1%;
 		}
-
+#banner h2, #banner p {
+    color: #222222 !important;
+}
 		#banner:after {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
