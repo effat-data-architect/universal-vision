@@ -11,28 +11,41 @@
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 
-			<!-- Header -->
+						<!-- Header -->
 				<header id="header" style="background: rgba(255, 255, 255, 0.95) !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 0 2em !important;">
 					
-					<!-- Added Style Element to explicitly prevent template from hiding logo on mobile -->
+					<!-- Mobile Responsive Branding Lock -->
 					<style>
+						#header h1#logo {
+							display: flex !important;
+							visibility: visible !important;
+							position: absolute !important;
+							left: 2em !important;
+							top: 0 !important;
+							z-index: 10001 !important;
+						}
+						/* This forces the logo to stay visible when the template switches to mobile mode */
+						.titleBar {
+							display: none !important;
+						}
+						#titleBar {
+							background: rgba(255, 255, 255, 0.95) !important;
+							box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+						}
 						@media screen and (max-width: 980px) {
-							#header h1#logo {
-								display: flex !important;
-								visibility: visible !important;
-								position: absolute !important;
-								left: 1.5em !important;
-								top: 0 !important;
+							#header {
+								display: block !important;
+								position: fixed !important;
 								height: 44px !important;
 								line-height: 44px !important;
 							}
-							#header h1#logo a {
-								color: #111111 !important;
+							#navPanel {
+								z-index: 10002 !important;
 							}
 						}
 					</style>
 
-					<h1 id="logo" style="left: 2em !important;">
+					<h1 id="logo">
 						<a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: #111111 !important;">
 							<!-- Embedded Tech Symbol -->
 							<svg xmlns="http://w3.org" viewBox="0 0 100 100" style="height: 24px; width: 24px; margin-right: 10px; fill: none; vertical-align: middle;">
@@ -41,8 +54,8 @@
 								<circle cx="50" cy="58" r="7" fill="#b91c1c" />
 							</svg>
 							<!-- Crisp Corporate Font -->
-							<span style="font-weight: 800; letter-spacing: 0.5px; font-size: 0.95em;">
-								UNIVERSAL <span style="font-weight: 300; color: #666666;">VISION</span>
+							<span style="font-weight: 800; letter-spacing: 0.5px; font-size: 0.95em; color: #111111 !important;">
+								UNIVERSAL <span style="font-weight: 300; color: #666666 !important;">VISION</span>
 							</span>
 						</a>
 					</h1>
