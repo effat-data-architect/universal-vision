@@ -189,38 +189,51 @@
 					</div>
 				</section>
 
-				<!-- Contact / CTA Section -->
+							<!-- Contact / CTA Section -->
 				<section id="five" class="wrapper style2 special fade" style="background: #f8fafc !important; color: #222222 !important; padding: 6em 0 !important; border-top: 1px solid #e2e8f0;">
 					<div class="container" style="max-width: 650px; margin: 0 auto; text-align: center;">
 						<header style="margin-bottom: 2.5em;">
 							<h2 style="color: #111111 !important; font-size: 2.2em; font-weight: 800; text-transform: none !important; letter-spacing: 0px !important;">Optimize Your Technical Infrastructure</h2>
-							<p style="color: #555555 !important;">Let us know how to reach you. Our solutions architect team will contact you to review your system requirements.</p>
+							<!-- Fixed Subtitle: Clear Dark Grey Text Visibility -->
+							<p style="color: #475569 !important; opacity: 1 !important; visibility: visible !important; filter: none !important;">Let us know how to reach you. Our solutions architect team will contact you to review your system requirements.</p>
 						</header>
 						
-						<!-- Expanded Forminit Implementation Layout -->
+						<!-- Forminit Implementation Layout -->
 						<form id="contact-form" style="width: 100%; text-align: left;">
+							
+							<!-- Honeypot Security Field -->
+							<div style="display: none !important; visibility: hidden !important;">
+								<label for="fi-honeypot">Leave this field blank</label>
+								<input type="text" name="fi-honeypot" id="fi-honeypot" autocomplete="off" tabindex="-1" />
+							</div>
+
 							<div class="row gtr-uniform gtr-50" style="display: flex; flex-wrap: wrap; margin: 0 -10px;">
 								
 								<!-- Email Field -->
 								<div class="col-6 col-12-xsmall" style="padding: 0 10px; margin-bottom: 15px; width: 50%;">
-									<label for="email" style="color: #475569 !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block;">Corporate Email Address</label>
-									<input type="email" name="fi-email-address" id="email" placeholder="Your Corporate Email Address" required style="background: #ffffff !important; color: #111111 !important; border: 1px solid #cbd5e1 !important; height: 44px !important; border-radius: 6px; opacity: 1 !important;" />
+									<!-- Forced High-Contrast Bold Label -->
+									<label for="email" style="color: #1e293b !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block; opacity: 1 !important;">Corporate Email Address</label>
+									<!-- Input Box With Forced Deep Charcoal Text Color -->
+									<input type="email" name="fi-email-address" id="email" placeholder="name@company.com" required style="background: #ffffff !important; color: #111111 !important; border: 1px solid #cbd5e1 !important; height: 44px !important; border-radius: 6px; width: 100%; padding: 0 12px; opacity: 1 !important;" />
 								</div>
 								
 								<!-- Phone Field -->
 								<div class="col-6 col-12-xsmall" style="padding: 0 10px; margin-bottom: 15px; width: 50%;">
-									<label for="phone" style="color: #475569 !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block;">Phone Number</label>
-									<input type="tel" name="fi-tel-phone" id="phone" placeholder="+1 (555) 000-0000" style="background: #ffffff !important; color: #222222 !important; border: 1px solid #cbd5e1 !important; height: 44px !important; border-radius: 6px; width: 100%; padding: 0 12px;" />
+									<!-- Forced High-Contrast Bold Label -->
+									<label for="phone" style="color: #1e293b !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block; opacity: 1 !important;">Phone Number</label>
+									<!-- Input Box With Forced Deep Charcoal Text Color -->
+									<input type="tel" name="fi-tel-phone" id="phone" placeholder="+1 (555) 000-0000" style="background: #ffffff !important; color: #111111 !important; border: 1px solid #cbd5e1 !important; height: 44px !important; border-radius: 6px; width: 100%; padding: 0 12px; opacity: 1 !important;" />
 								</div>
 								
 								<!-- Message Text Area -->
 								<div class="col-12" style="padding: 0 10px; margin-bottom: 20px; width: 100%;">
-									<label for="message" style="color: #475569 !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block;">Architecture / Project Requirements</label>
-									<textarea name="fi-text-requirements" id="message" placeholder="Briefly describe your data lifecycle, cloud migration targets, or system architectural requirements..." rows="4" style="background: #ffffff !important; color: #222222 !important; border: 1px solid #cbd5e1 !important; border-radius: 6px; width: 100%; padding: 12px; resize: vertical; line-height: 1.5; min-height: 100px; max-height: 300px; height: auto;"></textarea>
-								
+									<!-- Forced High-Contrast Bold Label -->
+									<label for="message" style="color: #1e293b !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block; opacity: 1 !important;">Architecture / Project Requirements</label>
+									<!-- Textarea Box With Forced Deep Charcoal Text Color -->
+									<textarea name="fi-text-requirements" id="message" placeholder="Briefly describe your data lifecycle, cloud migration targets, or system architectural requirements..." rows="4" style="background: #ffffff !important; color: #111111 !important; border: 1px solid #cbd5e1 !important; border-radius: 6px; width: 100%; padding: 12px; resize: vertical; line-height: 1.5; min-height: 100px; max-height: 300px; height: auto; opacity: 1 !important;"></textarea>
 								</div>
-								<input type="hidden" name="_gotcha" style="display:none !important" />
-								<!-- Submit Button Wrapper -->
+								
+								<!-- Submit Button -->
 								<div class="col-12" style="padding: 0 10px; width: 100%; text-align: center; margin-top: 10px;">
 									<input type="submit" value="Connect With Us" class="button primary" style="height: 46px !important; line-height: 46px !important; border-radius: 6px; font-weight: 600; padding: 0 3em !important; display: inline-block; width: auto;" />
 								</div>
@@ -229,6 +242,7 @@
 						</form>
 					</div>
 				</section>
+
 
 
 			<!-- Footer -->
