@@ -7,6 +7,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Forces all placeholder text inside input boxes to be sharp and fully visible */
+input::placeholder,
+textarea::placeholder {
+    color: #111111 !important;
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* Specific compatibility support for Opera and Chrome engines */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #111111 !important;
+    opacity: 1 !important;
+}
+
+/* Specific compatibility support for Firefox styles */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #111111 !important;
+    opacity: 1 !important;
+}
+
 			/* Desktop Header Base Settings */
 			#header h1#logo {
 				display: flex !important;
