@@ -223,10 +223,9 @@ textarea::-moz-placeholder {
 						<!-- Forminit Implementation Layout -->
 						<form id="contact-form" style="width: 100%; text-align: left;">
 							
-							<!-- Honeypot Security Field -->
+							
 							<div style="display: none !important; visibility: hidden !important;">
-								<label for="fi-honeypot">Leave this field blank</label>
-								<input type="text" name="fi-honeypot" id="fi-honeypot" autocomplete="off" tabindex="-1" />
+								<input type="hidden" name="_gotcha" style="display:none !important" />
 							</div>
 
 							<div class="row gtr-uniform gtr-50" style="display: flex; flex-wrap: wrap; margin: 0 -10px;">
@@ -243,8 +242,7 @@ textarea::-moz-placeholder {
 								<div class="col-6 col-12-xsmall" style="padding: 0 10px; margin-bottom: 15px; width: 50%;">
 									<!-- Forced High-Contrast Bold Label -->
 									<label for="phone" style="color: #1e293b !important; font-weight: 700; font-size: 0.85em; margin-bottom: 5px; display: block; opacity: 1 !important;">Phone Number</label>
-									<!-- Input Box With Forced Deep Charcoal Text Color -->
-									<input type="tel" name="fi-tel-phone" id="phone" placeholder="+1 (555) 000-0000" style="background: #ffffff !important; color: #111111 !important; border: 1px solid #cbd5e1 !important; height: 44px !important; border-radius: 6px; width: 100%; padding: 0 12px; opacity: 1 !important;" />
+									<input type="tel" name="fi-tel-phone" id="phone" placeholder="Enter International Number (e.g. +44...)" style="background: #ffffff !important; color: #111111 !important; border: 1px solid #cbd5e1 !important; height: 44px !important; border-radius: 6px; width: 100%; padding: 0 12px; opacity: 1 !important;" />
 								</div>
 								
 								<!-- Message Text Area -->
